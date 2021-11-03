@@ -1,0 +1,93 @@
+Home work № 1
+
+Maksim Aksenov        
+
+
+Linux terminal (GitBash) commands
+
+Посмотреть где я:
+pwd
+
+ Создать папку:
+mkdir HW_1
+
+ Зайти в папку:
+cd !$
+
+ Создать 3 папки:
+mkdir folder_1 folder_2 folder_3
+
+ Зайти в любую папку:
+cd folder_1
+
+ Создать 5 файлов (3 txt, 2 json):
+touch text_1.txt text_2.txt text_3.txt js_4.json js_5.json
+
+ Создать 3 папки:
+mkdir {direct_1,direct_2,direct_3}
+
+ Вывести список содержимого папки:
+ls
+
+ Открыть любой txt файл:
+vim text_1.txt
+
+  Написать туда что-нибудь, любой текст:
+нажать i, написать текст
+
+  Сохранить и выйти:
+нажать ESP, ввести :wq внизу терминала
+
+  Выйти из папки на уровень выше:
+cd ..
+—
+  Переместить любые 2 файла, которые вы создали, в любую другую папку:
+mv ./folder_1/{text_1.txt,tex_2.txt} ./folder_2
+
+  Скопировать любые 2 файла, которые вы создали, в любую другую папку:
+cp ./folder_1/{js_4.json,js_5.json} ./folder_3
+
+  Найти файл по имени:
+find . -name text_1.txt
+
+  Просмотреть содержимое файла в реальном времени:
+tail -F ./folder_2/text_1.txt , после просмотра нажать Ctrl+C
+
+  Вывести несколько первых строк из текстового файла:
+head -3 ./folder_2/text_1.txt
+
+  Вывести несколько последних строк из текстового файла:
+tail -3 ./folder_2/text_1.txt
+
+  Просмотреть содержимое длинного файла (команда less):
+less ./folder_2/text_1.txt , после просмотра нажать клавишу q
+
+  Вывести дату и время:
+date
+=========
+
+
+Задание *
+
+ Отправить http запрос на сервер:
+
+curl “http://162.55.220.72:5005/object_info_3?name=Vadim&age=32&salary=1000”
+
+ Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13:
+
+шаг 1:
+
+создать файл “myscript” в ~/git/gitbash и вписать в него скрипт:
+
+#!/bin/bash
+cd HW_1
+mkdir folder_1 folder_2 folder_3
+cd folder_1
+touch text_1.txt text_2.txt text_3.txt js_4.json js_5.json
+mkdir {direct_1,direct_2,direct_3}
+ls
+mv text_1.txt text_2.txt /с/Users/axmax/git/gitbash/HW_1/folder_3
+
+шаг 2:
+
+выполнить скрипт командой: ./myscript
