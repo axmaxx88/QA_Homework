@@ -66,13 +66,13 @@ git commit -m “Add Bug Report file” - коммит изменений
 git push - отправить изменения на внешний репозиторий 
 
 
-5. Вмержить ветку Bag Reports в Main
+5. Вмержить ветку Bug Reports в Main
 git checkout main - переключиться на главную ветку
 git merge Bug_Reports - вмержить ветку 
 
 
 6. Запушить main на внешний репозиторий.
-git push -u origin - запушить ветку
+git push - запушить информацию
 
 
 7. В ветке CheckLists набросать структуру чек листа.
