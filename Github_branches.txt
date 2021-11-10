@@ -1,0 +1,112 @@
+﻿Maksim Aksenov
+Github
+
+
+
+
+1. На локальном репозитории сделать ветки для:
+- Postman
+git branch Postman
+
+
+- Jmeter
+git branch Jmeter
+
+
+- CheckLists
+git branch CheckLists
+
+
+- Bug Reports
+git branch Bug_Reports
+
+
+- SQL
+git branch SQL
+
+
+- Charles
+git branch Charles
+
+
+- Mobile testing
+git branch Mobile_testing
+
+
+2. Запушить все ветки на внешний репозиторий
+git push -u origin --all
+
+
+3. В ветке Bug Reports сделать текстовый документ со структурой баг репорта
+git checkout Bug_Reports - переключиться на ветку
+touch BugReport.txt - создать файл
+vim BugReport - открыть файл через редактор и вписать в него:
+
+
+ID
+Project
+Issue Type
+Summary
+Precondition
+Actual Result
+Expected Result
+Reporter
+Priority
+Severity
+Environment
+Attachments 
+
+
+ESC, :wq - сохранить и выйти
+
+
+4. Запушить структуру багрепорта на внешний репозиторий:
+git add . - добавить файл в индекс
+git commit -m “Add Bug Report file” - коммит изменений 
+git push - отправить изменения на внешний репозиторий 
+
+
+5. Вмержить ветку Bag Reports в Main
+git checkout main - переключиться на главную ветку
+git merge Bug_Reports - вмержить ветку 
+
+
+6. Запушить main на внешний репозиторий.
+git push -u origin - запушить ветку
+
+
+7. В ветке CheckLists набросать структуру чек листа.
+git checkout CheckLists - переключиться на ветку
+touch CheckList.txt - создать файл
+vim CheckList.txt - открыть файл в редакторе и вписать в него:
+
+
+Build
+Environment
+Test date
+Tester
+Test type
+Result
+
+
+ESC, :wq - сохранить файл и выйти
+
+
+8. Запушить структуру на внешний репозиторий
+git add . - добавить файл в индекс
+git commit -m “Add CheckList file” - коммит изменений
+git push - отправить изменения на внешний репозиторий  
+
+
+9. На внешнем репозитории сделать Pull Request ветки CheckLists в main:
+* находиться на странице Github в разделе с нужным репозиторием
+* нажать Compare and pull request
+* заполнить необходимые поля и нажать Create pull request
+* нажать Merge pull request, подтвердить нажав на кнопку Confirm merge 
+
+
+
+
+10. Синхронизировать Внешнюю и Локальную ветки Main:
+находиться на главной ветке Main
+git pull - забрать изменения с внешнего репозитория и слить их с текущей веткой
