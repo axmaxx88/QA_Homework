@@ -1,0 +1,8 @@
+#!/bin/bash
+cd HWterminal
+mkdir folder_4 folder_5 folder_6
+cd folder_4
+touch text_6.txt text_7.txt text_8.txt json_9.json json_10.json
+mkdir {direct_4,direct_5,direct_6}
+ls
+mv text_6.txt text_7.txt /d/axmax/git/GitCourse/HWterminal/folder_6
