@@ -1,5 +1,5 @@
 #  You can experiment here, it won’t be checked
-import random   # подключам модуль random
+import random   # подключаем модуль random
 from time import *  # подключаем модуль time
 
 num = random.randint(1, 100)    # генерируем случайное число от 1 до 100
