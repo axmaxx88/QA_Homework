@@ -1,4 +1,3 @@
-#  You can experiment here, it won’t be checked
 import random   # подключаем модуль random
 from time import *  # подключаем модуль time
 
