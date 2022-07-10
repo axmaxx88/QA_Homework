@@ -1,32 +1,32 @@
---LTRIM, RTRIM и TRIM
-SELECT ProductName AS [Исходное значение], 
+--LTRIM, RTRIM ГЁ TRIM
+SELECT ProductName AS [Initial value], 
 	   LTRIM(ProductName) AS [LTRIM], 
 	   RTRIM(ProductName) AS [RTRIM],
-	   RTRIM(LTRIM(ProductName)) AS [RTRIM и LTRIM],
+	   RTRIM(LTRIM(ProductName)) AS [RTRIM ГЁ LTRIM],
 	   TRIM(ProductName) AS [TRIM]
 FROM Goods;
 
---LOWER и UPPER
-SELECT ProductName AS [Исходное значение], 
+--LOWER and UPPER
+SELECT ProductName AS [Initial value], 
 	   LOWER (ProductName) AS [LOWER], 
 	   UPPER(ProductName) AS [UPPER]
 FROM Goods;
 
 --LEN
-SELECT ProductName AS [Исходное значение], 
+SELECT ProductName AS [Initial value], 
 	   LEN(ProductName) AS [LEN],
-	   LEN(LTRIM(ProductName)) AS [LTRIM и LEN]
+	   LEN(LTRIM(ProductName)) AS [LTRIM ГЁ LEN]
 FROM Goods;
 
---LEFT и RIGHT
-SELECT ProductName AS [Исходное значение], 
+--LEFT and RIGHT
+SELECT ProductName AS [Initial value], 
 	   LEFT(ProductName, 3) AS [LEFT], 
 	   RIGHT(ProductName, 3) AS [RIGHT],
-	   LEFT(LTRIM(ProductName), 3) AS [LEFT и LTRIM], 
-	   RIGHT(RTRIM(ProductName), 3) AS [RIGHT и RTRIM]
+	   LEFT(LTRIM(ProductName), 3) AS [LEFT ГЁ LTRIM], 
+	   RIGHT(RTRIM(ProductName), 3) AS [RIGHT ГЁ RTRIM]
 FROM Goods;
 
 --SUBSTRING
-SELECT ProductName AS [Исходное значение], 
+SELECT ProductName AS [Initial value], 
 	   SUBSTRING(ProductName, 3, 5) AS [SUBSTRING]
 FROM Goods;
