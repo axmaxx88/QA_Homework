@@ -1,0 +1,11 @@
+--CAST
+SELECT CAST(123 AS VARCHAR(10)) AS [CAST];
+
+--CONVERT
+SELECT OrderDate AS [Исходное значение],
+	   CONVERT(CHAR(10), OrderDate, 1) AS [CONVERT 1],
+	   CONVERT(CHAR(10), OrderDate, 2) AS [CONVERT 2],
+	   CONVERT(CHAR(10), OrderDate, 101) AS [CONVERT 101],
+	   CONVERT(CHAR(10), OrderDate, 104) AS [CONVERT 104],
+	   CONVERT(CHAR(10), OrderDate, 105) AS [CONVERT 105]
+FROM Goods;
