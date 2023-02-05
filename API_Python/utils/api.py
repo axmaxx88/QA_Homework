@@ -34,3 +34,13 @@ class GoogleMapsAPI:
         print(result_post.text)
         return result_post
 
+    """Method for checking new location"""
+    @staticmethod
+    def get_new_place(place_id):
+
+        get_resource = "/maps/api/place/get/json"
+        get_url = base_url + get_resource + key + "&place_id=" + place_id
+        print(get_url)
+        result_get = HttpMethods.get(get_url)
+        print(result_get.text)
+        return result_get
