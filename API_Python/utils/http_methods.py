@@ -4,7 +4,7 @@ import requests
 
 
 class HttpMethods:
-    headers = {'Content Type:' 'Application/Json'}
+    headers = {'Content-Type': 'application/json'}
     cookie = ""
 
     @staticmethod
