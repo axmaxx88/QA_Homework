@@ -1,4 +1,5 @@
 """Check response methods"""
+import json
 from requests import Response
 
 class Checking:
@@ -11,6 +12,14 @@ class Checking:
             print(f"Successful! Status code = {status_code}")
         else:
             print(f"Failed! Status code = {status_code}")
+
+    """Method to check required fields in request response"""
+    @staticmethod
+    def check_json_token(response: Response, expected_value):
+        token = json.loads(response.text)
+        assert list(token) == expected_value
+        print("All fields are presented")
+
 
 
 
