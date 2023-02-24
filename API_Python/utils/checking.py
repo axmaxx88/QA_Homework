@@ -2,6 +2,7 @@
 import json
 from requests import Response
 
+
 class Checking:
 
     """Check Status Code method"""
